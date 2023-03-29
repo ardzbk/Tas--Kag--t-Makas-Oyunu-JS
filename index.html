@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="welcomeStyle.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="all">
+        <div class="back"></div>
+        <div class="front">
+            <div class="head">
+                <h2>Taş-Kağıt-Makas</h2>
+                <h2>Oyununa Hoşgeldiniz</h2>
+            </div>
+            <div class="body">
+                <div class="satır">
+                    <div class="col-6 left">
+                        <label>
+                            Kullanıcı Adı:
+                        </label>
+                        <input type="text" class="userName">
+                    </div>
+                </div>
+                <div class="satır">
+                    <div class="col-6 right">
+                        <label>
+                            Round Sayısı:
+                        </label>
+                        <input type="text" class="round">
+                    </div>
+                </div>
+                <div class="satır">
+                    <div class="btn btn-outline-success welcome-btn">
+                        Başla
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="game-screen">
+        <header class="header d-flex justify-content-center align-items-center">
+            <h1 class="header-title">
+                <h1>Taş - Kağıt - Makas</h1>
+            </h1>
+        </header>
+        <main>
+            <div class="container-fluid">
+                <div class="row up">
+                    <div class="score-board">
+                        <div class="user">
+
+                        </div>
+                        <div class="score">
+                            <div class="row">
+                                <h3 class="user-score">0</h3>
+                                <h3>:</h3>
+                                <h3 class="comp-score">0</h3>
+                            </div>
+                        </div>
+                        <div class="comp">
+                            Bilgisayar
+                        </div>
+                    </div>
+                </div>
+                <div class="row middle d-flex justify-content-center align-items-center">
+                    <div class="info">
+                        Oyuna Hoşgeldiniz !
+                    </div>
+                </div>
+                <div class="row bottom">
+                    <div class="col-3 rock" onclick="scoreBoard()">
+                        <i value="t" class="fa-solid fa-hand-back-fist"></i>
+                    </div>
+                    <div class="col-3 paper" onclick="scoreBoard()">
+                        <i class="fa-solid fa-hand"></i>
+                    </div>
+                    <div class="col-3 scissors" onclick="scoreBoard()">
+                        <i class="fa-solid fa-hand-scissors"></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>

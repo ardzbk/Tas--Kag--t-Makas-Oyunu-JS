@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.game-screen {
+    opacity: 0;
+    display: none;
+}
+
+.header {
+    background-color: #183A1D;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    color: #fff;
+    z-index: 1;
+}
+
+.container-fluid {
+    background-color: #E1EEDD;
+    height: 89vh;
+    position: relative;
+    top: 100px;
+}
+
+.up {
+    height: 200px;
+    background-color: #E1EEDD;
+    position: relative;
+}
+
+.score-board {
+    background-color: #E1EEDD;
+    width: 250px;
+    border: 5px solid #183A1D;
+    border-radius: 15px;
+    position: absolute;
+    height: 150px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.score {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.score .row {
+    display: flex;
+    position: absolute;
+    top: 5px;
+    left: 12px;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.row h3 {
+    width: 30px;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.user {
+    background-color: #F0A04B;
+    position: absolute;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 50%;
+    left: -1%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+}
+
+.comp {
+    background-color: #F0A04B;
+    position: absolute;
+    padding: 3px 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+    top: 50%;
+    right: -40%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    height: 40px;
+}
+
+.middle {
+    height: 200px;
+    background-color: #E1EEDD;
+}
+
+.info {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.bottom {
+    height: 200px;
+    background-color: #E1EEDD;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col-3 {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    background-color: #E1EEDD;
+    border: 5px solid black;
+    border-radius: 50%;
+    font-size: 50px;
+    color: black;
+    cursor: pointer;
+}
+
+.col-3:hover {
+    font-size: 60px;
+    transition: 1s;
+}
+
+.closeScreenGame{
+    opacity: 1;
+    display: block;
+}
